@@ -1,0 +1,260 @@
+<html>
+  <head>
+<title>Global Wordnet Association Proposal for Google Season of Docs</title>
+</head>
+<body>
+<h1>Global Wordnet Association Proposal for Google Season of Docs</h1>
+
+<a href='http://globalwordnet.org/'>
+  <img src='pics/GWA_logo.png', style='height:10ex;float:left'>
+</a>
+<p>
+The Global WordNet Association is a free, public and non-commercial
+organization that provides a platform for discussing, sharing and
+connecting wordnets for all languages in the world.  Our goal is to
+make compatible, linked, open lexical resources useful for both humans
+and computers.
+</p>
+
+<p>We are eager to welcome tech writing collaborators through the Google Season of Docs program to help us with our documentation needs! </p>
+
+<a href='https://developers.google.com/season-of-docs/docs'>
+  <img src='pics/gsod-logo.png', style='height:15ex'>
+</a>
+
+<h2>Ideas we invite tech writers to work with us on:</h2>
+
+<ul>
+  <li><a href="#structure">Wordnet Structure</a>
+   meaning of relations, pos, etc: aimed more at layman, covering things from wordnets beyond PWN (based on PWN and OMW and ...)
+
+<li>OMW how-tos
+  
+<li> <a href="#omw">How use the OMW</a>
+  <ul>
+  <li> Minimal required information
+  <li> Desired information
+  <li> Structure of definitions
+</ul>
+
+<li><a href="#contrib">How to contribute to a wordnet</a>
+
+<li> Interface to wordnet (Python: based on NLTK), and/or IXA?
+</ul>
+
+<p>Almost all of these tasks should include a documentation audit, to
+  see what we do and don't have already.
+
+<p>Important to document that there are still some disagreements about some issues.  In this case we should try to add pointers to existing discussions. <!-- FIXME -->
+
+  <hr>
+<p>If you are interested to know more about these project ideas,
+  please email us <!-- FIXME -->, and we'll reply as soon as we can.
+<hr>
+
+
+<h3><a name="structure">Wordnet Structure</a></h3>
+
+<a href='http://globalwordnet.org/'>
+  <img src='pics/GWA_logo.png', style='height:10ex;float:left'>
+</a>
+
+
+<p>The goal is to make sure all the data-types (semantic relations,
+  parts-of-speech, verb patterns, ...) are properly documented.  The
+  goal is that both dictionary users and dictionary developers can
+  access this easily, and we have a procedure for adding more
+  documentation as needed.
+
+  <br>  <br>
+  
+<h4>Background</h4>
+
+<p>Documentation on relations is spread over many sources, from the
+  <a href='https://wordnet.princeton.edu/documentation'>original man
+  pages</a>,
+  to <a href='https://research.vu.nl/ws/portalfiles/portal/74100554/D041Final'>project
+  reports</a>, <a href='http://www.plwordnet.pwr.wroc.pl/main/content/files/publications/A_Wordnet_from_the_Ground_Up.pdf'>books</a>
+  and papers.  
+
+<p>We have started to make a central repository of
+  documentation: <a href="https://globalwordnet.github.io/gwadoc/">gwadoc</a>,
+  but it needs a lot of work.  We are trying to keep UX strings together with the documentation,
+  to make it easier to keep them in sync.
+  
+  
+<h4>Needs</h4>
+
+<p>We have started with documentation for the core semantic relations,
+  such as <a title='a word that is more general than a given word; animal is a
+  hypernym of dog'
+	     href='https://globalwordnet.github.io/gwadoc/#hypernym'>hypernym</a>.
+  The documentation needs to be fleshed
+  out more, with descriptions meanings for tests, examples and more.
+
+<p>Currently our documentation is both incomplete, inconsistent and
+  overly technical when it exists.  It would also be good to have more
+  links to the original documentation.
+
+<p>We often add new information (like additional semantic relations),
+  so it would be good to have a template for adding new relations.
+
+<p>Finally (or perhaps initially), it would be good to have a
+  documentation audit to see what information is missing.
+  
+<b>FIXME: be more concrete</b>
+  
+
+<h4>Mentors</h4>
+
+<p>Ewa Rudnicka, Alexandre Rademaker, Francis Bond
+  
+<h4>Skills</h4>
+<ul>
+  <li> Ability to read, write, and organize technical documentation
+  <li> Fluent written and verbal communication skills in English
+  <li> Some knowledge of linguistics 
+  <li> Good independent research and exploration skills
+</ul>
+<p> Nice to have:
+<ul>
+  <li> Familiarity with Git
+  <li> Experience with RST and Markdown
+</ul>
+
+<hr>
+
+<h3><a name="omw">OMW How-Tos</a></h3>
+<a href='http://compling.hss.ntu.edu.sg/omw/'> <!-- FIXME: old URL -->
+  <img src='pics/omw-logo.svg', style='height:10ex;float:left'>
+</a>
+
+<p>The OMW is relatively complicated, and it would be good to have a
+  couple of user guides.
+
+<h4>Background</h4>
+
+<p>FIXME
+
+<h4>Needs</h4>
+
+<p>A guide for someone contributing a new wordnet (or family of wordnets)
+  <ul>
+    <li> How to make a well formatted wordnet
+    <li> How to upload it
+      <br>How to make sense of the feedback
+  </ul>
+
+<p>A guide for someone searching the wordnet (or family of wordnets)
+  <ul>
+    <li> How to read the returned pages
+      <br> Synset, Sense, Summary, ...
+    <li> How to download
+    <li> How to provide feedback
+  </ul>
+  
+<p>A guide for interacting with the InterLingual Index
+  <ul>
+    <li> Why and how to deprecate and supersede
+    <li> Judging new candidates
+  </ul>
+
+<h4>Mentors</h4>
+  
+Francis Bond, Arthur Bond, Luis?, Michael?
+
+<h4>Skills</h4>
+<ul>
+  <li> Fluent written and verbal communication skills in English
+  <li> Ability to read, write, and organize technical documentation and user stories
+  <li> Some knowledge of linguistics 
+  <li> Good independent research and exploration skills
+</ul>
+<p> Nice to have:
+<ul>
+  <li> Familiarity with Git
+  <li> Experience with RST and Markdown
+</ul>
+
+
+<h3><a name="contrib">How to contribute to wordnet</a></h3>
+<a href='https://en-word.net/'> <!-- FIXME: old URL -->
+  <img src='pics/english.svg', style='height:10ex;float:left'>
+</a>
+<br> <p>The goal is to let contributors know how to add new information
+  (words, senses and synsets).  It would be good to have (i) a general
+  guide and (ii) a guide specific to the English wordnet. 
+
+
+<h4>Background</h4>
+
+<p>We have a guide at NTU:
+  <a href='http://compling.hss.ntu.edu.sg/ntumc/tagdoc.html'>http://compling.hss.ntu.edu.sg/ntumc/tagdoc.html</a>
+(and a better one down at the moment)  Christiane also gave me some
+  notes (linked from the page that is down)
+
+<p>I am sure plwordnet has lots, maybe not in English.
+  
+<h4>Needs</h4>
+
+<h4>Mentors</h4>
+
+John McCrae, Francis?, Ewa? German?
+
+<h4>Skills</h4>
+<ul>
+  <li> Fluent written and verbal communication skills in English
+  <li> Ability to read, write, and organize technical documentation and user stories
+  <li> Some knowledge of linguistics 
+  <li> Good independent research and exploration skills
+</ul>
+<p> Nice to have:
+<ul>
+  <li> Familiarity with Git
+  <li> Experience with RST and Markdown
+</ul>
+
+<h3>Wordnet APIs</h3>
+
+<p>The goal is to document how to interface with the wordnet, through
+  e.g. NLTK, IXA, or ...
+
+<p><b>FIXME</b>I don't really want to do this for NLTK until we have
+  upgraded to the OMW 2.0 interface, ...
+  
+<h4>Background</h4>
+
+<h4>Needs</h4>
+
+<h4>Mentors</h4>
+
+<h4>Skills</h4>
+<ul>
+  <li> Fluent written and verbal communication skills in English
+  <li> Ability to read, write, and organize technical documentation and user stories
+  <li> Some knowledge of linguistics 
+  <li> Good independent research and exploration skills
+</ul>
+<p> Nice to have:
+<ul>
+  <li> Familiarity with Git
+  <li> Experience with RST and Markdown
+</ul>
+
+
+<h3> Acknowledgments </h3>
+
+<p>Proposal format very much inspired
+  by <a href='https://github.com/learningequality/kolibri/wiki/Project-ideas-for-Google-Season-of-Docs-2019'>Kolabri's
+  from 2019</a>
+
+<hr>
+<address>
+  <a href="mailto:bond@ieee.org;arademaker@gmail.com?subject=[gsod-gwa]">✉
+    Francis Bond and Alexandre Rademaker</a> (Organization administrators)
+ <br> <a href="https://globalwordnet.github.io/gwadoc/group.html">GWA
+   Documentation Working Group</a>
+ <br> Global Wordnet Association
+</address>
+</body>
+</html>
