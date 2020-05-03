@@ -9,14 +9,19 @@
   <img src='pics/GWA_logo.png', style='height:10ex;float:left'>
 </a>
 <p>
-The Global WordNet Association is a free, public and non-commercial
-organization that provides a platform for discussing, sharing and
-connecting wordnets for all languages in the world.  Our goal is to
-make compatible, linked, open lexical resources useful for both humans
-and computers.
+The Global WordNet Association (GWA) is a free, public and
+non-commercial organization that provides a platform for discussing,
+sharing and connecting semantic lexicons (wordnets) for all languages
+in the world.  Our goal is to make compatible, linked, open lexical
+resources useful for both humans and computers.  Here is a link to
+<a href='http://compling.hss.ntu.edu.sg/omw/cgi-bin/wn-gridx.cgi?usrname=&gridmode=grid&synset=06639428-n&lang=eng&lang2=eng'>
+  wordnet</a> in the Open Multilingual Wordnet.
 </p>
 
-<p>We are eager to welcome tech writing collaborators through the Google Season of Docs program to help us with our documentation needs! </p>
+<p>We are eager to welcome tech writing collaborators through the
+  Google Season of Docs program to help us with our documentation
+  needs!  GWA is a loose collaboration of many projects, we have
+  selected a couple for this proposal</p>
 
 <a href='https://developers.google.com/season-of-docs/docs'>
   <img src='pics/gsod-logo.png', style='height:15ex'>
@@ -25,35 +30,42 @@ and computers.
 <h2>Ideas we invite tech writers to work with us on:</h2>
 
 <ul>
-  <li><a href="#structure">Wordnet Structure</a>
-   meaning of relations, pos, etc: aimed more at layman, covering things from wordnets beyond PWN (based on PWN and OMW and ...)
-
-<li>OMW how-tos
+  <li><a href="#structure">Wordnet Structure</a>: what do the parts of
+    a lexical entry mean?
+    <br>Ideally this should include documentation accessible to users of the
+    lexicons as well as developers.
   
-<li> <a href="#omw">How use the OMW</a>
+
+  
+  <li> <a href="#omw">The Open Multilingual Wordnet (OMW)</a>:
+    <br>Some how-tos
   <ul>
+  <li> how to look up words and concepts
+  <li> how to add a new wordnet project
+  <li> how to download data
+</ul>
+
+<li><a href="#contrib">How to contribute a word or concept to a
+wordnet</a>
+<ul>
   <li> Minimal required information
   <li> Desired information
   <li> Structure of definitions
 </ul>
-
-<li><a href="#contrib">How to contribute to a wordnet</a>
-
-<li> Interface to wordnet (Python: based on NLTK), and/or IXA?
 </ul>
 
-<p>Almost all of these tasks should include a documentation audit, to
+<p>These tasks should all start with a documentation audit, to
   see what we do and don't have already.
 
-<p>Important to document that there are still some disagreements about some issues.  In this case we should try to add pointers to existing discussions. <!-- FIXME -->
 
   <hr>
 <p>If you are interested to know more about these project ideas,
-  please email us <!-- FIXME -->, and we'll reply as soon as we can.
+  please email the mentors of each project, and we'll reply as soon as we can.
 <hr>
 
+<h2>Detailed Descriptions:</h2>
 
-<h3><a name="structure">Wordnet Structure</a></h3>
+<h3>Project name: <a name="structure">Wordnet Structure</a></h3>
 
 <a href='http://globalwordnet.org/'>
   <img src='pics/GWA_logo.png', style='height:10ex;float:left'>
@@ -67,23 +79,24 @@ and computers.
   documentation as needed.
 
   <br>  <br>
-  
-<h4>Background</h4>
 
-<p>Documentation on relations is spread over many sources, from the
-  <a href='https://wordnet.princeton.edu/documentation'>original man
-  pages</a>,
-  to <a href='https://research.vu.nl/ws/portalfiles/portal/74100554/D041Final'>project
-  reports</a>, <a href='http://www.plwordnet.pwr.wroc.pl/main/content/files/publications/A_Wordnet_from_the_Ground_Up.pdf'>books</a>
-  and papers.  
+<h4>Description</h4>
 
 <p>We have started to make a central repository of
-  documentation: <a href="https://globalwordnet.github.io/gwadoc/">gwadoc</a>,
+  documentation for,e.g., semantic relations: <a href="https://globalwordnet.github.io/gwadoc/">gwadoc</a>,
   but it needs a lot of work.  We are trying to keep UX strings together with the documentation,
   to make it easier to keep them in sync.
+
+<p>The goal is to have the documentation dynamically produced with the
+  lexicons, so that we know we always have the same set of relations,
+  and we can pull in
+
+<p>We have also started adding more documentation to the development
+  branch of our <a href='https://github.com/globalwordnet/OMW'>new OMW interface</a>, but it has not been
+  deployed yet.
   
   
-<h4>Needs</h4>
+<h4>Related Material</h4>  
 
 <p>We have started with documentation for the core semantic relations,
   such as <a title='a word that is more general than a given word; animal is a
@@ -96,35 +109,42 @@ and computers.
   overly technical when it exists.  It would also be good to have more
   links to the original documentation.
 
+<p>Documentation on relations is spread over many sources, from the
+  <a href='https://wordnet.princeton.edu/documentation'>original man
+  pages</a>,
+  to <a href='https://research.vu.nl/ws/portalfiles/portal/74100554/D041Final'>project
+  reports</a>, <a href='http://www.plwordnet.pwr.wroc.pl/main/content/files/publications/A_Wordnet_from_the_Ground_Up.pdf'>books</a>
+  and papers.
+
 <p>We often add new information (like additional semantic relations),
   so it would be good to have a template for adding new relations.
 
 <p>Finally (or perhaps initially), it would be good to have a
   documentation audit to see what information is missing.
   
-<b>FIXME: be more concrete</b>
   
-
-<h4>Mentors</h4>
-
-<p>Ewa Rudnicka, Alexandre Rademaker, Francis Bond
   
-<h4>Skills</h4>
+<h4>Desired Skills</h4>
 <ul>
   <li> Ability to read, write, and organize technical documentation
   <li> Fluent written and verbal communication skills in English
   <li> Some knowledge of linguistics 
   <li> Good independent research and exploration skills
+  <li> Familiarity with Git and HTML
 </ul>
 <p> Nice to have:
 <ul>
-  <li> Familiarity with Git
-  <li> Experience with RST and Markdown
+  <li> Some knowledge of python
 </ul>
+
+<h5>Mentors</h5>
+
+<p>Ewa Rudnicka, German Rigau, Francis Bond
+
 
 <hr>
 
-<h3><a name="omw">OMW How-Tos</a></h3>
+<h3>Project name: <a name="omw">The Open Multilingual Wordnet</a></h3>
 <a href='http://compling.hss.ntu.edu.sg/omw/'> <!-- FIXME: old URL -->
   <img src='pics/omw-logo.svg', style='height:10ex;float:left'>
 </a>
@@ -132,19 +152,41 @@ and computers.
 <p>The OMW is relatively complicated, and it would be good to have a
   couple of user guides.
 
-<h4>Background</h4>
+<h4>Description</h4>
 
-<p>FIXME
+<p>The Open Multilingual Wordnet provides access to open wordnets in a
+  variety of languages, all linked to a collaborative Interlingual
+  Index. The goal is to make it easy to use wordnets in multiple
+  languages. The individual wordnets have been made by many different
+  projects and vary greatly in size and accuracy. We have defined a
+  common interchange format (GWA-LMF: Lexical markup framework) and a
+  <a href='https://compling.hss.ntu.edu.sg/iliomw/omw'>website where
+  people can upload and make new wordnets accessible</a>.  The Open
+  Multilingual Wordnet and its components are open: they can be freely
+  used, modified, and shared by anyone for any purpose.
 
-<h4>Needs</h4>
+  <p>The wordnets are all developed independently, although
+  all based on the original Princeton Wordnet of English.  They are
+  also typically made in projects with finite funding windows, and not
+  much money for maintenance.  Because of this, documentation is
+  spread all over the world: as technical reports, academic papers,
+  theses and more.
 
-<p>A guide for someone contributing a new wordnet (or family of wordnets)
+<h4>Related Material</h4>
+
+  <p>Link to the open source project that needs documentation.
+    <br> <a href='https://compling.hss.ntu.edu.sg/iliomw/omw'>Open
+      Multilingual Wordnet Version 2.0</a>
+
+    <h5>Documentation Goals</h5>
+  <p>A guide for someone contributing a new wordnet (or family of wordnets)
   <ul>
     <li> How to make a well formatted wordnet
     <li> How to upload it
       <br>How to make sense of the feedback
   </ul>
-
+<p><a href='https://compling.hss.ntu.edu.sg/iliomw/join'>Existing Documentation<a>
+  
 <p>A guide for someone searching the wordnet (or family of wordnets)
   <ul>
     <li> How to read the returned pages
@@ -152,16 +194,29 @@ and computers.
     <li> How to download
     <li> How to provide feedback
   </ul>
+<p>No Existing Documentation (we hope it is sort of intuitive, but
+  suspect it may not be to outsiders)
+  <ul>
+    <li><a href='https://compling.hss.ntu.edu.sg/iliomw/omw/concepts/57312'>Search
+    result for the concept <i>software documentation</i></a>
+    <li><a href='
+    https://compling.hss.ntu.edu.sg/iliomw/omw/senses/97277'>Search
+	result for the sense<i>software documentation</i></a>
+    <li><a href='https://compling.hss.ntu.edu.sg/iliomw/omw/src/awn_xho-0.0'>Summary for the Xhosa Wordnet</a>
+  </ul>
+  
   
 <p>A guide for interacting with the InterLingual Index
   <ul>
-    <li> Why and how to deprecate and supersede
+    <li> Why and how to deprecate and supersede concepts
     <li> Judging new candidates
   </ul>
-
+<p>Some documentation in the developer branch on github.
+  
+  
 <h4>Mentors</h4>
   
-Francis Bond, Arthur Bond, Luis?, Michael?
+Francis Bond, Alexandre Rademaker
 
 <h4>Skills</h4>
 <ul>
@@ -173,11 +228,10 @@ Francis Bond, Arthur Bond, Luis?, Michael?
 <p> Nice to have:
 <ul>
   <li> Familiarity with Git
-  <li> Experience with RST and Markdown
 </ul>
 
 
-<h3><a name="contrib">How to contribute to wordnet</a></h3>
+<h3>Project Name: <a name="contrib">How to contribute to wordnet</a></h3>
 <a href='https://en-word.net/'> <!-- FIXME: old URL -->
   <img src='pics/english.svg', style='height:10ex;float:left'>
 </a>
@@ -188,18 +242,32 @@ Francis Bond, Arthur Bond, Luis?, Michael?
 
 <h4>Background</h4>
 
-<p>We have a guide at NTU:
-  <a href='http://compling.hss.ntu.edu.sg/ntumc/tagdoc.html'>http://compling.hss.ntu.edu.sg/ntumc/tagdoc.html</a>
-(and a better one down at the moment)  Christiane also gave me some
-  notes (linked from the page that is down)
+<p>We have a very rough guide at NTU:
+  <a href='http://compling.hss.ntu.edu.sg/ntumc-unipi/tagdoc.html#change''>http://compling.hss.ntu.edu.sg/ntumc/tagdoc.html</a>
 
-<p>I am sure plwordnet has lots, maybe not in English.
+
+<p>The Polish wordnet project and Eurowordnet also have extensive
+  documentation, maybe not in English.
   
 <h4>Needs</h4>
 
+<p>An illustrated step-by-step guides for
+<ul>
+  <li> Adding a word to an existing synset
+  <li> Adding a new concept
+  <li> Deciding what should go into the wordnet and what stay out
+  <li> Good form for definitions and examples
+</ul>
+
+<p>There will be a need for language specific extenstions, but we want
+  to start by targeting English, specifically
+  the <a href='https://en-word.net/'>English Wordnet</a>.
+
+<p><a href='https://github.com/globalwordnet/english-wordnet/blob/master/CONTRIBUTING.md'>Current Documentation</a>
+  
 <h4>Mentors</h4>
 
-John McCrae, Francis?, Ewa? German?
+John McCrae, Francis Bond
 
 <h4>Skills</h4>
 <ul>
@@ -207,38 +275,11 @@ John McCrae, Francis?, Ewa? German?
   <li> Ability to read, write, and organize technical documentation and user stories
   <li> Some knowledge of linguistics 
   <li> Good independent research and exploration skills
+  <li> Experience with git
 </ul>
 <p> Nice to have:
 <ul>
-  <li> Familiarity with Git
-  <li> Experience with RST and Markdown
-</ul>
-
-<h3>Wordnet APIs</h3>
-
-<p>The goal is to document how to interface with the wordnet, through
-  e.g. NLTK, IXA, or ...
-
-<p><b>FIXME</b>I don't really want to do this for NLTK until we have
-  upgraded to the OMW 2.0 interface, ...
-  
-<h4>Background</h4>
-
-<h4>Needs</h4>
-
-<h4>Mentors</h4>
-
-<h4>Skills</h4>
-<ul>
-  <li> Fluent written and verbal communication skills in English
-  <li> Ability to read, write, and organize technical documentation and user stories
-  <li> Some knowledge of linguistics 
-  <li> Good independent research and exploration skills
-</ul>
-<p> Nice to have:
-<ul>
-  <li> Familiarity with Git
-  <li> Experience with RST and Markdown
+  <li> Familiarity with lexicography
 </ul>
 
 
@@ -246,7 +287,8 @@ John McCrae, Francis?, Ewa? German?
 
 <p>Proposal format very much inspired
   by <a href='https://github.com/learningequality/kolibri/wiki/Project-ideas-for-Google-Season-of-Docs-2019'>Kolabri's
-  from 2019</a>
+  from 2019</a>, thanks to the GWA board for discussion, and the
+  GSoDoc organisers for the chats.
 
 <hr>
 <address>

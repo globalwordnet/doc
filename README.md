@@ -3,6 +3,8 @@ Producing and coordinating documentation for the Global Wordnet Association
 
 This page has been set up for the Google Season of Docs.
 
-We are still working on our list of ideas.
+The list of ideas for 2020 is at https://globalwordnet.github.io/doc/
 
-See: https://developers.google.com/season-of-docs/docs/project-ideas
+The guidelines for developing the ideas are here:
+
+https://developers.google.com/season-of-docs/docs/project-ideas
